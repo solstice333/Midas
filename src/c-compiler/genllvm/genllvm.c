@@ -13,6 +13,7 @@
 #include "../ir/nametbl.h"
 #include "../shared/fileio.h"
 #include "genllvm.h"
+#include "../valemain.h"
 
 #include <llvm-c/ExecutionEngine.h>
 #include <llvm-c/Target.h>
@@ -254,7 +255,8 @@ void genlPackage(GenState *gen, ModuleNode *mod) {
         gen->compileUnit = LLVMDIBuilderCreateCompileUnit(gen->dibuilder, LLVMDWARFSourceLanguageC,
             gen->difile, "Cone compiler", 13, 0, "", 0, 0, "", 0, LLVMDWARFEmissionFull, 0, 0, 0);
     }
-    genlModule(gen, mod);
+  //    genlModule(gen, mod);
+  valemain(gen->module);
     if (!gen->opt->release)
         LLVMDIBuilderFinalize(gen->dibuilder);
 }

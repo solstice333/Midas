@@ -1,10 +1,26 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.11)
 project(conec)
+cmake_policy(VERSION 3.11)
 
 find_package(LLVM 7 REQUIRED CONFIG)
 
 message(STATUS "Found LLVM ${LLVM_PACKAGE_VERSION}")
 message(STATUS "Using LLVMConfig.cmake in: ${LLVM_DIR}")
+
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -std=c++17")
+
+include(FetchContent)
+
+FetchContent_Declare(json
+		GIT_REPOSITORY https://github.com/nlohmann/json
+		GIT_TAG v3.7.3)
+
+FetchContent_GetProperties(json)
+if(NOT json_POPULATED)
+	FetchContent_Populate(json)
+	add_subdirectory(${json_SOURCE_DIR} ${json_BINARY_DIR} EXCLUDE_FROM_ALL)
+endif()
+
 
 include_directories(${LLVM_INCLUDE_DIRS})
 add_definitions(${LLVM_DEFINITIONS})
@@ -109,7 +125,8 @@ set(LLVM_LINK_COMPONENTS
 llvm_map_components_to_libnames(llvm_libs support core irreader ${LLVM_LINK_COMPONENTS})
 
 
-add_executable(conec 
+add_executable(conec
+	src/c-compiler/main.cpp
 	src/c-compiler/conec.c
 	src/c-compiler/coneopts.c
 
@@ -191,7 +208,7 @@ add_executable(conec
 	src/c-compiler/genllvm/genltype.c
 )
 
-target_link_libraries(conec ${llvm_libs})
+target_link_libraries(conec ${llvm_libs} nlohmann_json::nlohmann_json)
 
 add_library(conestd
 	src/conestd/stdio.c
