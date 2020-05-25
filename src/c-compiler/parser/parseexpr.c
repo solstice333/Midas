@@ -250,7 +250,7 @@ INode *parsePrefix(ParseState *parse, int noSuffix);
 // - Borrowed ref (including to an anonymous function or closure)
 INode *parseAmper(ParseState *parse) {
     // Create appropriate RefNode, depending on ampersand operator
-    RefNode *anode;
+    RefNode *anode = NULL;
     switch (lex->toktype) {
     case AmperToken:
         anode = newRefNode(RefTag); break;

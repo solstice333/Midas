@@ -1,0 +1,7 @@
+<Project>
+ <PropertyGroup>
+   <LLVMProjectDir>D:\llvm-project</LLVMProjectDir>
+   <LLVMBuiltDir>D:\llvm-project\vsbuild\Release</LLVMBuiltDir>
+   <LLVMVSProjDir>D:\llvm-project\vsbuild</LLVMVSProjDir>
+ </PropertyGroup>
+</Project>

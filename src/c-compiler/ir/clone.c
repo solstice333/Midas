@@ -14,7 +14,7 @@ INode *cloneNode(CloneState *cstate, INode *nodep) {
     if (nodep == NULL)
         return NULL;
 
-    INode *node;
+    INode *node = NULL;
     switch (nodep->tag) {
     case AssignTag:
         node = cloneAssignNode(cstate, (AssignNode *)nodep); break;

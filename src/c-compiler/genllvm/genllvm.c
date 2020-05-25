@@ -15,7 +15,7 @@
 #include "genllvm.h"
 #include "../valemain.h"
 
-#include <llvm-c/ExecutionEngine.h>
+#include "llvm-c/ExecutionEngine.h"
 #include <llvm-c/Target.h>
 #include <llvm-c/Analysis.h>
 #include <llvm-c/BitWriter.h>
@@ -253,7 +253,7 @@ void genlPackage(GenState *gen, ModuleNode *mod) {
         gen->dibuilder = LLVMCreateDIBuilder(gen->module);
         gen->difile = LLVMDIBuilderCreateFile(gen->dibuilder, "main.cone", 9, ".", 1);
         gen->compileUnit = LLVMDIBuilderCreateCompileUnit(gen->dibuilder, LLVMDWARFSourceLanguageC,
-            gen->difile, "Cone compiler", 13, 0, "", 0, 0, "", 0, LLVMDWARFEmissionFull, 0, 0, 0);
+            gen->difile, "Cone compiler", 13, 0, "", 0, 0, "", 0, LLVMDWARFEmissionFull, 0, 0, 0, "isysroothere", strlen("isysroothere"), "sdkhere", strlen("sdkhere"));
     }
   //    genlModule(gen, mod);
   valemain(gen->module);

@@ -97,7 +97,7 @@ void valemain(LLVMModuleRef mod) {
   LLVMBuilderRef builder = LLVMCreateBuilder();
   LLVMBasicBlockRef blockL = LLVMAppendBasicBlock(entryFunctionL, "thebestblock");
   LLVMPositionBuilderAtEnd(builder, blockL);
-  LLVMValueRef emptyValues[0] = {};
+  LLVMValueRef emptyValues[1] = {};
   LLVMBuildRet(
       builder,
 //      LLVMConstInt(LLVMInt64Type(), 42, false));

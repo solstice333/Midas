@@ -76,3 +76,7 @@ cmake_install.cmake
 # IntelliJ
 .idea
 
+# Visual Studio
+.vs
+x64
+packages

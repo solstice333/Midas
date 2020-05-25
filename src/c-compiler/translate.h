@@ -25,6 +25,7 @@ LLVMTypeRef translateType(Reference* referenceM) {
     return LLVMInt64Type();
   } else {
     assert(false);
+    return nullptr;
   }
 }
 
@@ -148,7 +149,7 @@ LLVMValueRef translateExpression(
     return LLVMConstInt(LLVMInt64Type(), constantI64->value, false);
   } else if (auto discard = dynamic_cast<Discard*>(expr)) {
     std::cout << "do some cleanup here" << std::endl;
-    LLVMValueRef empty[0] = {};
+    LLVMValueRef empty[1] = {};
     return LLVMConstArray(LLVMInt64Type(), empty, 0);
   } else if (auto ret = dynamic_cast<Return*>(expr)) {
     return LLVMBuildRet(functionState->builder, translateExpression(globalState, functionState, ret->sourceExpr));
@@ -159,7 +160,7 @@ LLVMValueRef translateExpression(
     auto localAddr = LLVMBuildAlloca(functionState->builder, translateType(stackify->local->type), name.c_str());
     functionState->localAddrByLocalId.emplace(stackify->local->id->number, localAddr);
     LLVMBuildStore(functionState->builder, valueToStore, localAddr);
-    LLVMValueRef empty[0] = {};
+    LLVMValueRef empty[1] = {};
     return LLVMConstArray(LLVMInt64Type(), empty, 0);
   } else if (auto localLoad = dynamic_cast<LocalLoad*>(expr)) {
     auto localAddrIter = functionState->localAddrByLocalId.find(localLoad->local->id->number);
