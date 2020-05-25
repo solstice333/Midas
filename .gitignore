@@ -1,3 +1,4 @@
+
 # Prerequisites
 *.d
 
@@ -35,6 +36,7 @@
 *.i*86
 *.x86_64
 *.hex
+conec
 
 # Debug files
 *.dSYM/
@@ -62,3 +64,15 @@ modules.order
 Module.symvers
 Mkfile.old
 dkms.conf
+
+# CMake Nonsense
+CMakeCache.txt
+CMakeFiles
+Makefile
+_deps
+cmake_install.cmake
+*.cbp
+
+# IntelliJ
+.idea
+
