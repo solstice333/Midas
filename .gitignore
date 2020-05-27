@@ -1,3 +1,5 @@
+# Config files for local machine paths
+Directory.Build.props
 
 # Prerequisites
 *.d

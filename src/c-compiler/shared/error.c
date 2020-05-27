@@ -7,8 +7,6 @@
 
 #include "error.h"
 #include "timer.h"
-#include "../parser/lexer.h"
-#include "../ir/ir.h"
 
 #include <stdio.h>
 #include <stdlib.h>
@@ -74,25 +72,6 @@ void errorOutCode(char *tokp, uint32_t linenbr, char *linep, char *url, int code
     }
     fprintf(stderr, "^--- %s:%d:%d\n", url, linenbr, pos);
 }
-
-// Send an error message to stderr
-void errorMsgNode(INode *node, int code, const char *msg, ...) {
-    va_list argptr;
-    va_start(argptr, msg);
-    errorOutCode(node->srcp, node->linenbr, node->linep, node->lexer->url, code, msg, argptr);
-    va_end(argptr);
-    if (node->instnode)
-        errorMsgNode(node->instnode, Uncounted, "... as instantiated by this part of the source code");
-}
-
-// Send an error message to stderr
-void errorMsgLex(int code, const char *msg, ...) {
-    va_list argptr;
-    va_start(argptr, msg);
-    errorOutCode(lex->tokp, lex->linenbr, lex->linep, lex->url, code, msg, argptr);
-    va_end(argptr);
-}
-
 // Send an error message to stderr
 void errorMsg(int code, const char *msg, ...) {
     va_list argptr;

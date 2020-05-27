@@ -93,7 +93,10 @@ void valemain(LLVMModuleRef mod) {
       LLVMPointerType(LLVMPointerType(LLVMInt8Type(), 0), 0)
   };
   LLVMTypeRef functionTypeL = LLVMFunctionType(LLVMInt64Type(), paramTypesL.data(), paramTypesL.size(), 0);
-  LLVMValueRef entryFunctionL = LLVMAddFunction(mod, "main", functionTypeL);
+  LLVMValueRef entryFunctionL = LLVMAddFunction(mod, "dllmain", functionTypeL);
+  LLVMSetLinkage(entryFunctionL, LLVMDLLExportLinkage);
+  LLVMSetDLLStorageClass(entryFunctionL, LLVMDLLExportStorageClass);
+  LLVMSetFunctionCallConv(entryFunctionL, LLVMX86StdcallCallConv);
   LLVMBuilderRef builder = LLVMCreateBuilder();
   LLVMBasicBlockRef blockL = LLVMAppendBasicBlock(entryFunctionL, "thebestblock");
   LLVMPositionBuilderAtEnd(builder, blockL);
@@ -103,12 +106,13 @@ void valemain(LLVMModuleRef mod) {
 //      LLVMConstInt(LLVMInt64Type(), 42, false));
       LLVMBuildCall(builder, mainL, emptyValues, 0, "valeMainCall"));
 
+  std::cout << "Printing stuff!" << std::endl;
   std::cout << LLVMPrintModuleToString(mod) << std::endl;
 
   char *error = NULL;
   LLVMVerifyModule(mod, LLVMAbortProcessAction, &error);
   LLVMDisposeMessage(error);
-
+  /*
   LLVMExecutionEngineRef engine;
   error = NULL;
 //    LLVMLinkInJIT();
@@ -133,4 +137,5 @@ void valemain(LLVMModuleRef mod) {
   LLVMGenericValueRef res = LLVMRunFunction(engine, entryFunctionL, numArgs, args);
 
   printf("%d\n", (int)LLVMGenericValueToInt(res, 0));
+  */
 }

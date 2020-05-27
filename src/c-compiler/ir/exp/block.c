@@ -6,6 +6,17 @@
 */
 
 #include "../ir.h"
+#include <stdarg.h>
+
+// Send an error message to stderr
+void errorMsgNode(INode *node, int code, const char *msg, ...) {
+    va_list argptr;
+    va_start(argptr, msg);
+    errorOutCode(node->srcp, node->linenbr, node->linep, node->lexer->url, code, msg, argptr);
+    va_end(argptr);
+    if (node->instnode)
+        errorMsgNode(node->instnode, Uncounted, "... as instantiated by this part of the source code");
+}
 
 // Create a new block node
 BlockNode *newBlockNode() {

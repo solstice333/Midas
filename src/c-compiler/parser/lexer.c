@@ -21,9 +21,18 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <stdio.h>
+#include <stdarg.h>
 
 // Global lexer state
 Lexer *lex = NULL;        // Current lexer
+
+// Send an error message to stderr
+void errorMsgLex(int code, const char* msg, ...) {
+  va_list argptr;
+  va_start(argptr, msg);
+  errorOutCode(lex->tokp, lex->linenbr, lex->linep, lex->url, code, msg, argptr);
+  va_end(argptr);
+}
 
 // Inject a new source stream into the lexer
 void lexInject(char *url, char *src) {

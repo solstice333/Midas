@@ -150,7 +150,6 @@
     </PostBuildEvent>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Midas.cpp" />
     <ClCompile Include="src\c-compiler\conec.c" />
     <ClCompile Include="src\c-compiler\coneopts.c" />
     <ClCompile Include="src\c-compiler\corelib\corelib.c" />

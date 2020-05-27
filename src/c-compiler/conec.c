@@ -8,12 +8,10 @@
 #include "conec.h"
 #include "coneopts.h"
 #include "shared/fileio.h"
-#include "ir/nametbl.h"
-#include "ir/ir.h"
+//#include "ir/nametbl.h"
+//#include "ir/ir.h"
 #include "shared/error.h"
 #include "shared/timer.h"
-#include "parser/lexer.h"
-#include "parser/parser.h"
 #include "genllvm/genllvm.h"
 
 #include <stdio.h>
@@ -59,7 +57,7 @@ void doAnalysis(ModuleNode **mod) {
 int main(int argc, char **argv) {
     ConeOptions coneopt;
     GenState gen;
-    ModuleNode *modnode;
+    ModuleNode *modnode = NULL;
     int ok;
 
     // Get compiler's options from passed arguments
@@ -77,14 +75,14 @@ int main(int argc, char **argv) {
 
     // Parse source file, do semantic analysis, and generate code
     timerBegin(ParseTimer);
-    modnode = parsePgm(&coneopt);
+    //modnode = parsePgm(&coneopt);
     if (errors == 0) {
         timerBegin(SemTimer);
-        doAnalysis(&modnode);
+        //doAnalysis(&modnode);
         if (errors == 0) {
             timerBegin(GenTimer);
-            if (coneopt.print_ir)
-                inodePrint(coneopt.output, coneopt.srcpath, (INode*)modnode);
+            //if (coneopt.print_ir)
+            //    inodePrint(coneopt.output, coneopt.srcpath, (INode*)modnode);
             genmod(&gen, modnode);
             genClose(&gen);
         }

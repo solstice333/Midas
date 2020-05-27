@@ -31,7 +31,7 @@ Program* getUserInput() {
                         {"": "Ref", "ownership": {"": "Share"}, "referend": {"": "Int"}},
                         {"": "Ref", "ownership": {"": "Share"}, "referend": {"": "Int"}}],
                       "return": {"": "Ref", "ownership": {"": "Share"}, "referend": {"": "Int"}}},
-                    "argExprs": [{"": "ConstantI64", "value": 3}, {"": "ConstantI64", "value": 9}]},
+                    "argExprs": [{"": "ConstantI64", "value": 3}, {"": "ConstantI64", "value": 4}]},
                   "local": {"": "Local",
                     "id": {"": "VariableId", "number": 0, "name": {"": "Some", "value": "F(\"main\"):TemplarBlockResultVarName"}},
                     "type": {"": "Ref", "ownership": {"": "Share"}, "referend": {"": "Int"}}},
