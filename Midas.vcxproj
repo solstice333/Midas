@@ -209,7 +209,7 @@
     <ClCompile Include="src\c-compiler\ir\types\ttuple.c" />
     <ClCompile Include="src\c-compiler\ir\types\typedef.c" />
     <ClCompile Include="src\c-compiler\ir\types\void.c" />
-    <ClCompile Include="src\c-compiler\main.cpp" />
+    <ClCompile Include="src\c-compiler\vale.cpp" />
     <ClCompile Include="src\c-compiler\parser\lexer.c" />
     <ClCompile Include="src\c-compiler\parser\parseexpr.c" />
     <ClCompile Include="src\c-compiler\parser\parseflow.c" />
@@ -228,7 +228,6 @@
     <ClInclude Include="src\c-compiler\coneopts.h" />
     <ClInclude Include="src\c-compiler\corelib\corelib.h" />
     <ClInclude Include="src\c-compiler\genllvm\genllvm.h" />
-    <ClInclude Include="src\c-compiler\input.h" />
     <ClInclude Include="src\c-compiler\instructions.h" />
     <ClInclude Include="src\c-compiler\ir\clone.h" />
     <ClInclude Include="src\c-compiler\ir\exp\allocate.h" />
@@ -292,7 +291,7 @@
     <ClInclude Include="src\c-compiler\shared\utf8.h" />
     <ClInclude Include="src\c-compiler\translate.h" />
     <ClInclude Include="src\c-compiler\types.h" />
-    <ClInclude Include="src\c-compiler\valemain.h" />
+    <ClInclude Include="src\c-compiler\vale.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />

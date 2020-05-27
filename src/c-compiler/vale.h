@@ -12,7 +12,7 @@
 #define EXTERNC
 #endif
 
-EXTERNC void valemain(LLVMModuleRef mod);
+EXTERNC void compileValeCode(LLVMModuleRef mod, const char* filename);
 
 #undef EXTERNC
 

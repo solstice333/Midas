@@ -9,6 +9,7 @@
 #include <vector>
 #include <iostream>
 #include <memory>
+#include <fstream>
 #include <optional>
 #include <unordered_map>
 #include <sstream>
@@ -22,8 +23,7 @@
 
 #include "translate.h"
 #include "readjson.h"
-#include "input.h"
-#include "valemain.h"
+#include "vale.h"
 
 using std::move;
 
@@ -66,10 +66,12 @@ LLVMTargetMachineRef genlCreateMachine() {
   return machine;
 }
 
-void valemain(LLVMModuleRef mod) {
-//  LLVMModuleRef mod = LLVMModuleCreateWithName("my_module");
+void compileValeCode(LLVMModuleRef mod, const char* filename) {
+  std::ifstream instream(filename);
+  std::string str(std::istreambuf_iterator<char>{instream}, {});
 
-  auto program = getUserInput();
+  auto programJ = json::parse(str.c_str());
+  auto program = readProgram(programJ);
 
   GlobalState globalState;
 

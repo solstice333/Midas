@@ -13,7 +13,7 @@
 #include "../ir/nametbl.h"
 #include "../shared/fileio.h"
 #include "genllvm.h"
-#include "../valemain.h"
+#include "../vale.h"
 
 #include "llvm-c/ExecutionEngine.h"
 #include <llvm-c/Target.h>
@@ -256,7 +256,7 @@ void genlPackage(GenState *gen, ModuleNode *mod) {
             gen->difile, "Cone compiler", 13, 0, "", 0, 0, "", 0, LLVMDWARFEmissionFull, 0, 0, 0, "isysroothere", strlen("isysroothere"), "sdkhere", strlen("sdkhere"));
     }
   //    genlModule(gen, mod);
-  valemain(gen->module);
+  compileValeCode(gen->module, gen->opt->srcpath);
     if (!gen->opt->release)
         LLVMDIBuilderFinalize(gen->dibuilder);
 }
