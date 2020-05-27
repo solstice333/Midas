@@ -247,13 +247,16 @@ void genlModule(GenState *gen, ModuleNode *mod) {
 
 void genlPackage(GenState *gen, ModuleNode *mod) {
 
-    assert(mod->tag == ModuleTag);
+    if (mod) {
+      assert(mod->tag == ModuleTag);
+    }
     gen->module = LLVMModuleCreateWithNameInContext(gen->opt->srcname, gen->context);
     if (!gen->opt->release) {
         gen->dibuilder = LLVMCreateDIBuilder(gen->module);
         gen->difile = LLVMDIBuilderCreateFile(gen->dibuilder, "main.cone", 9, ".", 1);
+        // If theres a compile error on this line, its some sort of LLVM version issue, try commenting or uncommenting the last four args.
         gen->compileUnit = LLVMDIBuilderCreateCompileUnit(gen->dibuilder, LLVMDWARFSourceLanguageC,
-            gen->difile, "Cone compiler", 13, 0, "", 0, 0, "", 0, LLVMDWARFEmissionFull, 0, 0, 0, "isysroothere", strlen("isysroothere"), "sdkhere", strlen("sdkhere"));
+            gen->difile, "Cone compiler", 13, 0, "", 0, 0, "", 0, LLVMDWARFEmissionFull, 0, 0, 0/*, "isysroothere", strlen("isysroothere"), "sdkhere", strlen("sdkhere")*/);
     }
   //    genlModule(gen, mod);
   compileValeCode(gen->module, gen->opt->srcpath);

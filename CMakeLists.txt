@@ -126,7 +126,7 @@ llvm_map_components_to_libnames(llvm_libs support core irreader ${LLVM_LINK_COMP
 
 
 add_executable(conec
-	src/c-compiler/main.cpp
+	src/c-compiler/vale.cpp
 	src/c-compiler/conec.c
 	src/c-compiler/coneopts.c
 
