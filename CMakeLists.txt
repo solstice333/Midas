@@ -2,12 +2,13 @@ cmake_minimum_required(VERSION 3.11)
 project(conec)
 cmake_policy(VERSION 3.11)
 
-find_package(LLVM 7 REQUIRED CONFIG)
+find_package(LLVM 7.1.0 REQUIRED CONFIG)
 
 message(STATUS "Found LLVM ${LLVM_PACKAGE_VERSION}")
 message(STATUS "Using LLVMConfig.cmake in: ${LLVM_DIR}")
 
 set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -g -std=c++11")
+set(CMAKE_C_COMPILER /usr/local/opt/llvm@7/bin/clang)
 
 include(FetchContent)
 
@@ -62,10 +63,10 @@ set(LLVM_LINK_COMPONENTS
 		AMDGPUInfo
 		AMDGPUAsmParser
 		AMDGPUCodeGen
-		AVRAsmParser
-		AVRInfo
-		AVRDesc
-		AVRCodeGen
+# 		AVRAsmParser
+# 		AVRInfo
+# 		AVRDesc
+# 		AVRCodeGen
 		BPFInfo
 		BPFAsmParser
 		BPFDisassembler
@@ -105,11 +106,11 @@ set(LLVM_LINK_COMPONENTS
 		SystemZAsmParser
 		SystemZDisassembler
 		SystemZCodeGen
-		WebAssemblyInfo
-		WebAssemblyDesc
-		WebAssemblyAsmParser
-		WebAssemblyDisassembler
-		WebAssemblyCodeGen
+#		WebAssemblyInfo
+#		WebAssemblyDesc
+#		WebAssemblyAsmParser
+#		WebAssemblyDisassembler
+#		WebAssemblyCodeGen
 		X86Info
 		X86Desc
 		X86AsmParser
