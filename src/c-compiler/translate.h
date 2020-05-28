@@ -255,6 +255,12 @@ void translateFunction(
   LLVMBuilderRef builder = LLVMCreateBuilder();
   FunctionState functionState(functionL, builder);
 
+  int blockNumber = functionState.nextBlockNumber++;
+  auto blockName = std::string("block") + std::to_string(blockNumber);
+  LLVMBasicBlockRef blockL = LLVMAppendBasicBlock(functionState.containingFunc, blockName.c_str());
+
+  LLVMPositionBuilderAtEnd(functionState.builder, blockL);
+
   translateExpression(globalState, &functionState, functionM->block);
 }
 
