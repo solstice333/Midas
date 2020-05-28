@@ -99,7 +99,7 @@ void compileValeCode(LLVMModuleRef mod, const char* filename) {
       LLVMPointerType(LLVMPointerType(LLVMInt8Type(), 0), 0)
   };
   LLVMTypeRef functionTypeL = LLVMFunctionType(LLVMInt64Type(), paramTypesL.data(), paramTypesL.size(), 0);
-  LLVMValueRef entryFunctionL = LLVMAddFunction(mod, "dllmain", functionTypeL);
+  LLVMValueRef entryFunctionL = LLVMAddFunction(mod, "main", functionTypeL);
   LLVMSetLinkage(entryFunctionL, LLVMDLLExportLinkage);
   LLVMSetDLLStorageClass(entryFunctionL, LLVMDLLExportStorageClass);
   LLVMSetFunctionCallConv(entryFunctionL, LLVMX86StdcallCallConv);
