@@ -155,7 +155,7 @@ Function* readFunction(const json& function) {
   assert(function[""] == "Function");
   return new Function(
       readPrototype(function["prototype"]),
-      readBlock(function["block"]));
+      readExpression(function["block"]));
 }
 
 Program* readProgram(const json& program) {

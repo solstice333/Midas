@@ -19,6 +19,7 @@ using std::move;
 
 // Defined elsewhere
 class Block;
+class Expression;
 
 // Defined in this file
 class Program;
@@ -89,12 +90,12 @@ public:
 class Function {
 public:
     Prototype* prototype;
-    Block* block;
+  Expression* block;
 
     Function(
 
         Prototype* prototype_,
-    Block* block_
+    Expression* block_
         ) :
         prototype(prototype_),
         block(block_) {}
