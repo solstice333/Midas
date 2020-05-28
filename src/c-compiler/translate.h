@@ -255,7 +255,6 @@ void translateFunction(
   LLVMBuilderRef builder = LLVMCreateBuilder();
   FunctionState functionState(functionL, builder);
 
-  auto [block, blockResult] =
   translateBlock(globalState, &functionState, functionM->block);
 }
 

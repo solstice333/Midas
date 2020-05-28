@@ -76,7 +76,9 @@ void compileValeCode(LLVMModuleRef mod, const char* filename) {
   GlobalState globalState;
 
   LLVMValueRef mainL = nullptr;
-  for (auto [name, function] : program->functions) {
+  for (auto p : program->functions) {
+    auto name = p.first;
+    auto function = p.second;
     LLVMValueRef entryFunctionL = declareFunction(&globalState, mod, function);
     if (function->prototype->name->name == "F(\"main\")") {
       mainL = entryFunctionL;
@@ -86,7 +88,9 @@ void compileValeCode(LLVMModuleRef mod, const char* filename) {
 //  mainL = testMainL;
 
 
-  for (auto [name, function] : program->functions) {
+  for (auto p : program->functions) {
+    auto name = p.first;
+    auto function = p.second;
     translateFunction(&globalState, mod, function);
   }
 

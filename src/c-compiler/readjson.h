@@ -27,8 +27,7 @@ std::unordered_map<K, V> readArrayIntoMap(const json& j, const F& f) {
   map.reserve(j.size());
   for (const auto& element : j) {
     std::pair<K, V> p = f(element);
-    auto [k, v] = move(p);
-    map.emplace(move(k), move(v));
+    map.emplace(move(p.first), move(p.second));
   }
   return map;
 }
@@ -169,7 +168,7 @@ Program* readProgram(const json& program) {
       {},//readArray<readExtern>(program["externs"]),
       readArrayIntoMap<std::string, Function*>(
           program["functions"],
-          [](auto j){
+          [](json j){
               auto f = readFunction(j);
               return std::make_pair(f->prototype->name->name, f);
           }));
