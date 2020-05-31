@@ -49,3 +49,8 @@ $ echo $?
 7
 ```
 
+## Emitting Source To LLVM Assembly
+
+```
+$ clang -c -emit-llvm foo.cpp -o foo.bc && llvm-dis -o foo.ll foo.bc 
+```
