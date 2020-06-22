@@ -24,10 +24,13 @@ if(NOT json_POPULATED)
 	add_subdirectory(${json_SOURCE_DIR} ${json_BINARY_DIR} EXCLUDE_FROM_ALL)
 endif()
 
-include_directories(${LLVM_INCLUDE_DIRS})
-include_directories("${CMAKE_SOURCE_DIR}/src/c-compiler/")
+include_directories(
+		${LLVM_INCLUDE_DIRS}
+		"${CMAKE_SOURCE_DIR}/src/c-compiler/"
+)
 add_definitions(${LLVM_DEFINITIONS})
 
+# output from `llvm-config --components | tr " " "\n"`
 set(LLVM_LINK_COMPONENTS
 		aarch64asmparser
 		aarch64asmprinter
