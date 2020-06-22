@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true">
+    <generated>
+      <config projectName="valec" targetName="test-class_parser" />
+      <config projectName="valec" targetName="test-element_access2" />
+      <config projectName="valec" targetName="test-element_access1" />
+      <config projectName="valec" targetName="test-testsuites" />
+      <config projectName="valec" targetName="test-meta" />
+      <config projectName="valec" targetName="test-ubjson" />
+      <config projectName="valec" targetName="intrinsics_gen" />
+      <config projectName="valec" targetName="test-comparison" />
+      <config projectName="valec" targetName="doctest_main" />
+      <config projectName="valec" targetName="test-large_json" />
+      <config projectName="valec" targetName="test-udt" />
+      <config projectName="valec" targetName="test-msgpack" />
+      <config projectName="valec" targetName="test-unicode" />
+      <config projectName="valec" targetName="NightlyCoverage" />
+      <config projectName="valec" targetName="test-pointer_access" />
+      <config projectName="valec" targetName="test-json_pointer" />
+      <config projectName="valec" targetName="ContinuousStart" />
+      <config projectName="valec" targetName="test-serialization" />
+      <config projectName="valec" targetName="NightlyStart" />
+      <config projectName="valec" targetName="test-json_patch" />
+      <config projectName="valec" targetName="ExperimentalCoverage" />
+      <config projectName="valec" targetName="test-readme" />
+      <config projectName="valec" targetName="test-regression" />
+      <config projectName="valec" targetName="test-capacity" />
+      <config projectName="valec" targetName="ExperimentalTest" />
+      <config projectName="valec" targetName="NightlyMemCheck" />
+      <config projectName="valec" targetName="test-constructor1" />
+      <config projectName="valec" targetName="test-inspection" />
+      <config projectName="valec" targetName="ContinuousBuild" />
+      <config projectName="valec" targetName="ContinuousCoverage" />
+      <config projectName="valec" targetName="NightlyTest" />
+      <config projectName="valec" targetName="NightlyConfigure" />
+      <config projectName="valec" targetName="test-constructor2" />
+      <config projectName="valec" targetName="Continuous" />
+      <config projectName="valec" targetName="NightlySubmit" />
+      <config projectName="valec" targetName="ContinuousUpdate" />
+      <config projectName="valec" targetName="test-class_iterator" />
+      <config projectName="valec" targetName="ExperimentalStart" />
+      <config projectName="valec" targetName="test-items" />
+      <config projectName="valec" targetName="ExperimentalBuild" />
+      <config projectName="valec" targetName="test-noexcept" />
+      <config projectName="valec" targetName="NightlyUpdate" />
+      <config projectName="valec" targetName="ContinuousMemCheck" />
+      <config projectName="valec" targetName="ContinuousConfigure" />
+      <config projectName="valec" targetName="ExperimentalUpdate" />
+      <config projectName="valec" targetName="test-to_chars" />
+      <config projectName="valec" targetName="test-alt-string" />
+      <config projectName="valec" targetName="test-merge_patch" />
+      <config projectName="valec" targetName="test-class_const_iterator" />
+      <config projectName="valec" targetName="ExperimentalMemCheck" />
+      <config projectName="valec" targetName="test-convenience" />
+      <config projectName="valec" targetName="ContinuousTest" />
+      <config projectName="valec" targetName="NightlyMemoryCheck" />
+      <config projectName="valec" targetName="test-class_lexer" />
+      <config projectName="valec" targetName="ContinuousSubmit" />
+      <config projectName="valec" targetName="test-wstring" />
+      <config projectName="valec" targetName="test-concepts" />
+      <config projectName="valec" targetName="NightlyBuild" />
+      <config projectName="valec" targetName="test-algorithms" />
+      <config projectName="valec" targetName="test-bson" />
+      <config projectName="valec" targetName="test-conversions" />
+      <config projectName="valec" targetName="valec" />
+      <config projectName="valec" targetName="Nightly" />
+      <config projectName="valec" targetName="test-iterators1" />
+      <config projectName="valec" targetName="test-iterators2" />
+      <config projectName="valec" targetName="ExperimentalConfigure" />
+      <config projectName="valec" targetName="test-allocator" />
+      <config projectName="valec" targetName="Experimental" />
+      <config projectName="valec" targetName="test-deserialization" />
+      <config projectName="valec" targetName="test-reference_access" />
+      <config projectName="valec" targetName="test-cbor" />
+      <config projectName="valec" targetName="ExperimentalSubmit" />
+      <config projectName="valec" targetName="test-modifiers" />
+    </generated>
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug">
+        <ADDITIONAL_GENERATION_ENVIRONMENT>
+          <envs>
+            <env name="LDFLAGS" value="-L/usr/local/opt/llvm@7/lib -Wl,-rpath,/usr/local/opt/llvm@7/lib" />
+            <env name="CPPFLAGS" value="-I/usr/local/opt/llvm@7/include" />
+            <env name="PATH" value="/usr/local/opt/llvm@7/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin" />
+          </envs>
+        </ADDITIONAL_GENERATION_ENVIRONMENT>
+      </configuration>
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8f64da11-6273-4835-b250-c30c52390426" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1dfegGUusLyFQdCmIBaI0EWXZcX" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="cf.first.check.clang-format" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/CMakeLists.txt" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager" selected="Python tests.Unittests in test">
+    <configuration name="Continuous" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="Continuous" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContinuousBuild" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="ContinuousBuild" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="ContinuousBuild">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContinuousConfigure" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="ContinuousConfigure" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="ContinuousConfigure">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContinuousCoverage" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="ContinuousCoverage" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="ContinuousCoverage">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContinuousMemCheck" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="ContinuousMemCheck" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="ContinuousMemCheck">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContinuousStart" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="ContinuousStart" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="ContinuousStart">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContinuousSubmit" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="ContinuousSubmit" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="ContinuousSubmit">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContinuousTest" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="ContinuousTest" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="ContinuousTest">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ContinuousUpdate" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="ContinuousUpdate" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="ContinuousUpdate">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Experimental" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="Experimental" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExperimentalBuild" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="ExperimentalBuild" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="ExperimentalBuild">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExperimentalConfigure" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="ExperimentalConfigure" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="ExperimentalConfigure">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExperimentalCoverage" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="ExperimentalCoverage" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="ExperimentalCoverage">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExperimentalMemCheck" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="ExperimentalMemCheck" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="ExperimentalMemCheck">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExperimentalStart" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="ExperimentalStart" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="ExperimentalStart">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExperimentalSubmit" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="ExperimentalSubmit" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="ExperimentalSubmit">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExperimentalTest" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="ExperimentalTest" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="ExperimentalTest">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExperimentalUpdate" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="ExperimentalUpdate" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="ExperimentalUpdate">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Nightly" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="Nightly" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NightlyBuild" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="NightlyBuild" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="NightlyBuild">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NightlyConfigure" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="NightlyConfigure" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="NightlyConfigure">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NightlyCoverage" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="NightlyCoverage" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="NightlyCoverage">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NightlyMemCheck" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="NightlyMemCheck" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="NightlyMemCheck">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NightlyMemoryCheck" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="NightlyMemoryCheck" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="NightlyMemoryCheck">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NightlyStart" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="NightlyStart" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="NightlyStart">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NightlySubmit" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="NightlySubmit" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="NightlySubmit">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NightlyTest" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="NightlyTest" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="NightlyTest">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="NightlyUpdate" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="NightlyUpdate" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="NightlyUpdate">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="doctest_main" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="doctest_main" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="intrinsics_gen" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="intrinsics_gen" CONFIG_NAME="Debug">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-algorithms" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-algorithms" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-algorithms">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-allocator" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-allocator" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-allocator">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-alt-string" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-alt-string" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-alt-string">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-bson" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-bson" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-bson">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-capacity" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-capacity" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-capacity">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-cbor" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-cbor" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-cbor">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-class_const_iterator" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-class_const_iterator" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-class_const_iterator">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-class_iterator" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-class_iterator" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-class_iterator">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-class_lexer" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-class_lexer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-class_lexer">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-class_parser" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-class_parser" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-class_parser">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-comparison" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-comparison" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-comparison">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-concepts" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-concepts" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-concepts">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-constructor1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-constructor1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-constructor1">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-constructor2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-constructor2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-constructor2">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-convenience" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-convenience" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-convenience">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-conversions" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-conversions" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-conversions">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-deserialization" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-deserialization" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-deserialization">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-element_access1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-element_access1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-element_access1">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-element_access2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-element_access2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-element_access2">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-inspection" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-inspection" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-inspection">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-items" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-items" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-items">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-iterators1" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-iterators1" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-iterators1">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-iterators2" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-iterators2" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-iterators2">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-json_patch" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-json_patch" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-json_patch">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-json_pointer" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-json_pointer" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-json_pointer">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-large_json" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-large_json" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-large_json">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-merge_patch" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-merge_patch" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-merge_patch">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-meta" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-meta" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-meta">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-modifiers" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-modifiers" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-modifiers">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-msgpack" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-msgpack" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-msgpack">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-noexcept" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-noexcept" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-noexcept">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-pointer_access" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-pointer_access" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-pointer_access">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-readme" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-readme" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-readme">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-reference_access" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-reference_access" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-reference_access">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-regression" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-regression" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-regression">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-serialization" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-serialization" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-serialization">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-testsuites" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-testsuites" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-testsuites">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-to_chars" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-to_chars" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-to_chars">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-ubjson" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-ubjson" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-ubjson">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-udt" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-udt" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-udt">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-unicode" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-unicode" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-unicode">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="test-wstring" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="test-wstring" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="test-wstring">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="valec" type="CMakeRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" PASS_PARENT_ENVS_2="true" PROJECT_NAME="valec" TARGET_NAME="valec" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="valec" RUN_TARGET_NAME="valec">
+      <method v="2">
+        <option name="com.jetbrains.cidr.execution.CidrBuildBeforeRunTaskProvider$BuildBeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Unittests in test" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
+      <module name="Midas" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/test" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;$PROJECT_DIR$/test&quot;" />
+      <option name="_new_targetType" value="&quot;PATH&quot;" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="CMake Application.intrinsics_gen" />
+      <item itemvalue="CMake Application.valec" />
+      <item itemvalue="CMake Application.Continuous" />
+      <item itemvalue="CMake Application.ContinuousBuild" />
+      <item itemvalue="CMake Application.ContinuousConfigure" />
+      <item itemvalue="CMake Application.ContinuousCoverage" />
+      <item itemvalue="CMake Application.ContinuousMemCheck" />
+      <item itemvalue="CMake Application.ContinuousStart" />
+      <item itemvalue="CMake Application.ContinuousSubmit" />
+      <item itemvalue="CMake Application.ContinuousTest" />
+      <item itemvalue="CMake Application.ContinuousUpdate" />
+      <item itemvalue="CMake Application.Experimental" />
+      <item itemvalue="CMake Application.ExperimentalBuild" />
+      <item itemvalue="CMake Application.ExperimentalConfigure" />
+      <item itemvalue="CMake Application.ExperimentalCoverage" />
+      <item itemvalue="CMake Application.ExperimentalMemCheck" />
+      <item itemvalue="CMake Application.ExperimentalStart" />
+      <item itemvalue="CMake Application.ExperimentalSubmit" />
+      <item itemvalue="CMake Application.ExperimentalTest" />
+      <item itemvalue="CMake Application.ExperimentalUpdate" />
+      <item itemvalue="CMake Application.Nightly" />
+      <item itemvalue="CMake Application.NightlyBuild" />
+      <item itemvalue="CMake Application.NightlyConfigure" />
+      <item itemvalue="CMake Application.NightlyCoverage" />
+      <item itemvalue="CMake Application.NightlyMemCheck" />
+      <item itemvalue="CMake Application.NightlyMemoryCheck" />
+      <item itemvalue="CMake Application.NightlyStart" />
+      <item itemvalue="CMake Application.NightlySubmit" />
+      <item itemvalue="CMake Application.NightlyTest" />
+      <item itemvalue="CMake Application.NightlyUpdate" />
+      <item itemvalue="CMake Application.doctest_main" />
+      <item itemvalue="CMake Application.test-algorithms" />
+      <item itemvalue="CMake Application.test-allocator" />
+      <item itemvalue="CMake Application.test-alt-string" />
+      <item itemvalue="CMake Application.test-bson" />
+      <item itemvalue="CMake Application.test-capacity" />
+      <item itemvalue="CMake Application.test-cbor" />
+      <item itemvalue="CMake Application.test-class_const_iterator" />
+      <item itemvalue="CMake Application.test-class_iterator" />
+      <item itemvalue="CMake Application.test-class_lexer" />
+      <item itemvalue="CMake Application.test-class_parser" />
+      <item itemvalue="CMake Application.test-comparison" />
+      <item itemvalue="CMake Application.test-concepts" />
+      <item itemvalue="CMake Application.test-constructor1" />
+      <item itemvalue="CMake Application.test-constructor2" />
+      <item itemvalue="CMake Application.test-convenience" />
+      <item itemvalue="CMake Application.test-conversions" />
+      <item itemvalue="CMake Application.test-deserialization" />
+      <item itemvalue="CMake Application.test-element_access1" />
+      <item itemvalue="CMake Application.test-element_access2" />
+      <item itemvalue="CMake Application.test-inspection" />
+      <item itemvalue="CMake Application.test-items" />
+      <item itemvalue="CMake Application.test-iterators1" />
+      <item itemvalue="CMake Application.test-iterators2" />
+      <item itemvalue="CMake Application.test-json_patch" />
+      <item itemvalue="CMake Application.test-json_pointer" />
+      <item itemvalue="CMake Application.test-large_json" />
+      <item itemvalue="CMake Application.test-merge_patch" />
+      <item itemvalue="CMake Application.test-meta" />
+      <item itemvalue="CMake Application.test-modifiers" />
+      <item itemvalue="CMake Application.test-msgpack" />
+      <item itemvalue="CMake Application.test-noexcept" />
+      <item itemvalue="CMake Application.test-pointer_access" />
+      <item itemvalue="CMake Application.test-readme" />
+      <item itemvalue="CMake Application.test-reference_access" />
+      <item itemvalue="CMake Application.test-regression" />
+      <item itemvalue="CMake Application.test-serialization" />
+      <item itemvalue="CMake Application.test-testsuites" />
+      <item itemvalue="CMake Application.test-to_chars" />
+      <item itemvalue="CMake Application.test-ubjson" />
+      <item itemvalue="CMake Application.test-udt" />
+      <item itemvalue="CMake Application.test-unicode" />
+      <item itemvalue="CMake Application.test-wstring" />
+      <item itemvalue="Python tests.Unittests in test" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python tests.Unittests in test" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8f64da11-6273-4835-b250-c30c52390426" name="Default Changelist" comment="" />
+      <created>1592820683751</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1592820683751</updated>
+      <workItem from="1592820688019" duration="113000" />
+      <workItem from="1592821007088" duration="1419000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1721" y="-63" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592821435827">
+      <screen x="1280" y="-257" width="1920" height="1053" />
+    </state>
+    <state x="1721" y="-63" key="#com.intellij.execution.impl.EditConfigurationsDialog/1280.-257.1920.1053/0.23.1280.777@1280.-257.1920.1053" timestamp="1592821435827" />
+    <state x="2099" y="6" key="EnvironmentVariablesDialog" timestamp="1592821289171">
+      <screen x="1280" y="-257" width="1920" height="1053" />
+    </state>
+    <state x="2099" y="6" key="EnvironmentVariablesDialog/1280.-257.1920.1053/0.23.1280.777@1280.-257.1920.1053" timestamp="1592821289171" />
+    <state width="1878" height="289" key="GridCell.Tab.0.bottom" timestamp="1592822511541">
+      <screen x="1280" y="-257" width="1920" height="1053" />
+    </state>
+    <state width="1878" height="289" key="GridCell.Tab.0.bottom/1280.-257.1920.1053/0.23.1280.777@1280.-257.1920.1053" timestamp="1592822511541" />
+    <state width="1878" height="289" key="GridCell.Tab.0.center" timestamp="1592822511540">
+      <screen x="1280" y="-257" width="1920" height="1053" />
+    </state>
+    <state width="1878" height="289" key="GridCell.Tab.0.center/1280.-257.1920.1053/0.23.1280.777@1280.-257.1920.1053" timestamp="1592822511540" />
+    <state width="1878" height="289" key="GridCell.Tab.0.left" timestamp="1592822511540">
+      <screen x="1280" y="-257" width="1920" height="1053" />
+    </state>
+    <state width="1878" height="289" key="GridCell.Tab.0.left/1280.-257.1920.1053/0.23.1280.777@1280.-257.1920.1053" timestamp="1592822511540" />
+    <state width="1878" height="289" key="GridCell.Tab.0.right" timestamp="1592822511541">
+      <screen x="1280" y="-257" width="1920" height="1053" />
+    </state>
+    <state width="1878" height="289" key="GridCell.Tab.0.right/1280.-257.1920.1053/0.23.1280.777@1280.-257.1920.1053" timestamp="1592822511541" />
+    <state width="1878" height="356" key="GridCell.Tab.1.bottom" timestamp="1592820655651">
+      <screen x="1280" y="-257" width="1920" height="1053" />
+    </state>
+    <state width="1878" height="356" key="GridCell.Tab.1.bottom/1280.-257.1920.1053/0.23.1280.777@1280.-257.1920.1053" timestamp="1592820655651" />
+    <state width="1878" height="356" key="GridCell.Tab.1.center" timestamp="1592820655650">
+      <screen x="1280" y="-257" width="1920" height="1053" />
+    </state>
+    <state width="1878" height="356" key="GridCell.Tab.1.center/1280.-257.1920.1053/0.23.1280.777@1280.-257.1920.1053" timestamp="1592820655650" />
+    <state width="1878" height="356" key="GridCell.Tab.1.left" timestamp="1592820655649">
+      <screen x="1280" y="-257" width="1920" height="1053" />
+    </state>
+    <state width="1878" height="356" key="GridCell.Tab.1.left/1280.-257.1920.1053/0.23.1280.777@1280.-257.1920.1053" timestamp="1592820655649" />
+    <state width="1878" height="356" key="GridCell.Tab.1.right" timestamp="1592820655650">
+      <screen x="1280" y="-257" width="1920" height="1053" />
+    </state>
+    <state width="1878" height="356" key="GridCell.Tab.1.right/1280.-257.1920.1053/0.23.1280.777@1280.-257.1920.1053" timestamp="1592820655650" />
+    <state x="1749" y="-92" key="SettingsEditor" timestamp="1592822214737">
+      <screen x="1280" y="-257" width="1920" height="1053" />
+    </state>
+    <state x="1749" y="-92" key="SettingsEditor/1280.-257.1920.1053/0.23.1280.777@1280.-257.1920.1053" timestamp="1592822214737" />
+  </component>
+</project>
